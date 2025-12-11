@@ -1,0 +1,9 @@
+@import "tailwindcss";
+/* Optional small global tweaks */
+html, body, #root { height: 100%; }
+body { @apply bg-stone-800; }
+
+/* If you want the aspect helper used in the demo */
+.aspect-w-4 { position: relative; }
+.aspect-w-4::before { content: ""; display: block; padding-top: 75%; }
+.aspect-w-4 > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
